@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #62af90;
+    padding: 20px 0;
+}
+
+.nav-left {
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    padding-left: 6%;
+}
+
+.nav-left h2 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.nav-right {
+    flex-grow: 0;
+    align-items: center;
+    padding-right: 4%;
+}
+
+.nav-right a {
+    font-size: 1.5em;
+    color: white;
+    padding: 5px;
+}
+/* QUERO FAZER UM HOVER AQUI, ESTE É APENAS DE EXEMPLO */
+.nav-right a:hover {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.main-saudacao {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.main-texto {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.main-saudacao h1 {
+    font-size: 3em;
+    color: #45a07c;
+    text-align: center;
+}
+
+.main-texto p {
+    font-size: 1.1em;
+    color: #333;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #62af90;
+    padding-top: 5px;
+    margin-top: 25px;
+}
+
+.footer-cima {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-texto h4 {
+    color: white;
+    font-weight: 700;
+}
+
+.footer-texto a {
+    color: whitesmoke;
+
+}
+
+.footer-baixo {
+    padding-top: 14px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-saudacao {
+        width: 50%;
+        height: 40%;
+    }
+
+    .main-texto {
+        width: 50%;
+        height: 60%;
+    }
+
+    .main-saudacao h1 {
+        font-size: 2em;
+    }
+
+    .main-texto p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-saudacao h1 {
+        font-size: 1.5em;
+    }
+
+    .main-texto p {
+        font-size: 0.8em;
+    }
+}
