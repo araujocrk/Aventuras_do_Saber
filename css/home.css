@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    overflow-x: hidden;
+    
+}
+
+.sidebar {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 5vw;
+    background-color: #62af90;
+    padding: 20px 20px;
+    font-size: 0px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    flex: 1;
+    font-size: 20px;
+    color: white;
+    overflow: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar ul li.item-menu a, .sidebar .txt-site {
+    color: white;
+}
+
+.sidebar ul li.item-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.sidebar ul li.item-menu a:hover {
+    background-color: #316750;
+}
+
+.sidebar ul li.item-menu a i{
+    font-size: 30px;
+}
+
+main {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62af90;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/floresta_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
