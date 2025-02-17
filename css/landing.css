@@ -10,6 +10,7 @@ body {
 	display: flex;
 	flex-direction: column;
     height: 100vh;
+    color: white;
 }
 
 header {
@@ -30,7 +31,6 @@ header {
 
 .header-left h2 {
     font-size: 1.5em;
-    color: white;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ header {
 /* QUERO FAZER UM HOVER AQUI, ESTE É APENAS DE EXEMPLO */
 .header-right a:hover {
     background-color: #316750;
-    transition: .3s;
+    transition: .4s;
 }
 
 main {
@@ -58,7 +58,6 @@ main {
     justify-content: center;
 	flex: 2;
     flex-grow: 3;
-    background-color: white;
 }
 
 .main-saudacao {
@@ -84,7 +83,7 @@ main {
 
 .main-texto p {
     font-size: 1.1em;
-    color: #333;
+    color: black;
     text-align: justify;
     line-height: 1.5;
 }
@@ -110,7 +109,6 @@ footer {
 }
 
 .footer-texto h4 {
-    color: white;
     font-weight: 700;
 }
 

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    color: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #62af90;
+    padding: 20px 20px;
+    font-size: 0px;
+    transition: all 0.5s;
+    overflow: hidden;
+    box-shadow: 3px 0 0 #316750;
+}
+
+.sidebar:hover {
+    font-size: 20px;
+    overflow: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar ul li.item-menu a {
+    color: white;
+}
+
+.sidebar ul li.item-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    top: 0;
+}
+
+.sidebar ul li.item-menu a:hover {
+    background-color: #316750;
+}
+
+.sidebar ul li.item-menu a i{
+    font-size: 30px;
+}
+
+.main-container {
+    width: 80%;
+    color: #333;
+    padding: 40px;
+    margin-left: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.main-container h1 {
+    font-size: 36px;
+    color: #62af90;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.main-container h2 {
+    font-size: 28px;
+    color: #62af90;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.main-container h3 {
+    font-size: 22px;
+    color: #62af90;
+    margin-bottom: 10px;
+}
+
+.main-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.main-container ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.main-container ol li {
+    margin-bottom: 10px;
+}
+
+.main-container ul {
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+.main-container ul li {
+    margin-bottom: 8px;
+}
